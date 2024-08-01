@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat en la misma Wi-Fi</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #messages { border: 1px solid #ccc; height: 300px; overflow-y: scroll; margin-bottom: 10px; }
+        #messageInput { width: 80%; }
+    </style>
+</head>
+<body>
+    <h1>Chat en la misma Wi-Fi</h1>
+    <div id="messages"></div>
+    <input id="messageInput" type="text" placeholder="Escribe un mensaje..." />
+    <button id="sendButton">Enviar</button>
+
+    <script>
+        const socket = new WebSocket('ws://192.168.140.193:8080');
+
+        socket.onmessage = function(event) {
+    event.data.text().then(message => {
+        const messagesDiv = document.getElementById('messages');
+        messagesDiv.innerHTML += `<div>${message}</div>`;
+        messagesDiv.scrollTop = messagesDiv.scrollHeight; // Desplazar hacia abajo
+    });
+};
+
+document.getElementById('sendButton').onclick = function() {
+    const input = document.getElementById('messageInput');
+    const message = input.value.trim(); // Eliminar espacios en blanco
+    if (message) { // Asegúrate de que el mensaje no esté vacío
+        socket.send(message); // Envía el mensaje como cadena
+        input.value = ''; // Limpiar el campo de entrada
+    }
+};
+
+    </script>
+</body>
+</html>
+
+
