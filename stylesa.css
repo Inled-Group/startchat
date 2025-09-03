@@ -1,0 +1,412 @@
+/* Estilo para el botón del desplegable */
+.dropbtn {
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 6px 10px;
+    margin-right: 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* Contenedor del desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Contenido del desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Botones dentro del contenido del desplegable */
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Cambiar color de los botones al pasar el ratón */
+.dropdown-content button:hover {
+    background-color: #ccc;
+}
+
+/* Mostrar contenido del desplegable cuando se hace clic */
+.show {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-container input[type=text] {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+   .search-container input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease;
+  }
+  .search-container input[type="text"]:hover {
+    border-color: #41fd29;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease;
+  }
+  .search-container button {
+          background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 6px 10px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 20px;
+          cursor: pointer;
+          border-radius: 20px;
+          transition: background-color 0.3s ease;
+      }
+      .search-container button:hover {
+          background-color: #41fd29;
+      }
+      .search-container button  i {
+          margin-right: 5px;
+      }
+      
+
+  .search-engines {
+    display: flex;
+    margin-left: 20px;
+  }
+
+  .search-engines button {
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 6px 10px;
+    margin-right: 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+  }
+  .search-engines button:hover {
+          background-color: #41fd29;
+      }
+
+  .search-engines button.active {
+    background-color: #4CAF50;
+    color: white;
+
+  }
+  .search-engines button:hover.active{
+    background-color: #41fd29;
+    color: white;
+
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+header :hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d7d7d7;
+    padding: 10px;
+    transition: background-color 1s ease;
+    border-radius: 20px;
+  }
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  }
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7ffde;
+  padding: 0.5px;
+  margin-top: 60px;
+  }
+aside{
+display: flex;
+justify-content: right;
+align-items: right;
+background-color: #ffff;
+padding: 10px;
+}
+
+
+footer{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #efefef;
+padding: 10px;
+border-radius: 0px;
+width: 1350px;
+height: 5px;
+}
+.top-button {
+  display: flex;
+  margin-left: 20px;
+}
+
+.top-button {
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  margin-right: 5px;
+  border-radius: 20px;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+.top-button:hover {
+        background-color: #41fd29;
+    }
+iframe {
+  border: none;
+  transition: filter 0.3s ease;
+  filter: grayscale(100%);
+}
+iframe:hover {
+  filter: grayscale(0%);
+}
+
+.boton {
+  background-color: #ccc;
+  border: none;
+  color: rgb(8, 8, 8);
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #41fd29;
+  font-family: "Montserrat", sans-serif;
+}
+
+p{
+  font-family: "Montserrat", sans-serif;
+}
+h2{
+  font-family: "Montserrat", sans-serif;
+}
+
+h4{
+  font-family: "Montserrat", sans-serif;
+}
+
+li{
+  font-family: "Montserrat", sans-serif;
+}
+
+h3{
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+a {
+  color: #00fd088f;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: blue;
+}
+a:active {
+  color: #41fd29;
+}
+
+h1{
+  font-family:"Montserrat Alternates", sans-serif;
+  color: #00fd088f
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+  /* Estilo para el botón del desplegable */
+
+#myButton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+#myButton:hover {
+  background-color: #41fd29;
+}
+
+
+
+#planes {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+#planes:hover {
+  background-color: #41fd29;
+}
+
+#myStart :hover{
+  color: #41fd29;
+}
+.load-memory-saturation{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+.load-memory-saturation:hover {
+  background-color: #41fd29;
+}
+body { font-family: Arial, sans-serif; display: flex; flex-direction: column; align-items: center; margin: 0; padding: 20px; background-color: #f0f0f0; }
+#messages { border: 1px solid #ccc; height: 300px; width: 100%; max-width: 600px; overflow-y: scroll; margin-bottom: 10px; padding: 10px; background-color: #fff; }        
+button {  
+background-color: #b8f7a8;
+border: 1px;
+outline: none;
+cursor: pointer;
+padding: 6px 10px;
+margin-right: 5px;
+border-radius: 20px;
+font-size: 15px;
+width: 100px;
+height: 100px;
+transition: background-color 0.3s ease; }
+button:hover {  background-color: #41fd29; }
+#connectedUsers, #errorMessages, #portInput { margin-bottom: 10px; }
+#errorMessages { color: red; }
+
+#unreadCount { font-weight: bold; }
+.sendBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.netBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input {
+padding: 6px;
+border: 1px solid #ccc;
+border-radius: 20px;
+font-size: 16px;
+transition: border-color 0.3s ease;
+width: 400px;
+height: 90px;
+
+}
+.input:focus {
+border-color: #4CAF50;
+outline: none;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+transition: border-color 0.3s ease;
+}
+.input:hover {
+border-color: #41fd29;
+outline: none;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+transition: border-color 0.3s ease;
+}
+.inpute {
+padding: 6px;
+border: 1px solid #ccc;
+border-radius: 20px;
+font-size: 16px;
+transition: border-color 0.3s ease;
+width: 90px;
+height: 90px;
+}
+.inpute:focus {
+border-color: #4CAF50;
+outline: none;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+transition: border-color 0.3s ease;
+}
+.inpute:hover {
+border-color: #41fd29;
+outline: none;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+transition: border-color 0.3s ease;
+}
